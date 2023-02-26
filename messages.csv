@@ -1,0 +1,16 @@
+MESSAGE,RESPONSE
+hi, dbleuleu"
+"
+hi! my name is dbleuleu", what's yours?
+MESSAGE,RESPONSE
+hi,2()"
+##                elif cmd=='run_4':"
+##                    import ch4.p4 as p4"
+##                    p4.hi4()"
+#    def function2():"
+        #self.ins.function2()"
+#        print('Hi", I am function2！')"
+"
+T = Test()"
+T.function1()"
+#T.function2()
