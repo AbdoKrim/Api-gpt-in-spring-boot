@@ -17,8 +17,11 @@ POST /api/send, accepts JSON data containing message to send to {"message": "Hel
   
   5.	Cas de test :Pour tester ce service, nous utilisons l'outil swagger 
 Envoi d'une question au service :
- 
+ ![image](https://user-images.githubusercontent.com/104686964/221441850-d3da0955-0319-46aa-af02-8a0e247c51ff.png)
+
 La réponse reçue du service :
+![image](https://user-images.githubusercontent.com/104686964/221441862-1a752da2-3173-402a-b844-86a1be404ae0.png)
+
  
 
 6.	Pour configurer la clé du service ChatGPT modifier le fichier de configuration
@@ -28,6 +31,8 @@ public static final String API_KEY = "Bearer " + "your key";
 7.	Test de connexion :
 Le test de connexion à Internet est un processus qui consiste à vérifier si votre appareil est correctement connecté à Internet et s'il est capable d'envoyer et de recevoir des données d'autres appareils et serveurs sur Internet. Le test consiste généralement à envoyer un signal ou une requête de votre appareil à un autre appareil ou serveur sur internet, puis à recevoir une réponse pour confirmer que le signal a été reçu avec succès.
 Dans ce service, s'il y a une mauvaise connexion, voici la réponse :
+![image](https://user-images.githubusercontent.com/104686964/221441890-1aa06091-368f-4306-b428-80a753bc29e9.png)
+
  
 
 8.       Pour consulter la documentation swagger et tester le service, utilisez le point de terminaison 
@@ -54,10 +59,14 @@ Pour obtenir les dépendances de ce projet, vous pouvez consulter le fichier pom
 </dependency>
 
 
-Partie Testing
+### Partie Testing
 la requêtes HTTP «/api/send >>est testé avec Junit et mockMVC 
+![image](https://user-images.githubusercontent.com/104686964/221441915-0663af18-f2a9-414f-b38f-cd993e1377e9.png)
+
  
 Résulta de Test 
+![image](https://user-images.githubusercontent.com/104686964/221441926-20a4648a-983e-4281-bc26-0d311e716e97.png)
+
   
 
 
