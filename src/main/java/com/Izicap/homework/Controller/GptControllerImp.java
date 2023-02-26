@@ -1,5 +1,6 @@
 package com.Izicap.homework.Controller;
 
+import com.Izicap.homework.exceptons.BadConnectionExeption;
 import com.Izicap.homework.model.Request;
 import com.Izicap.homework.model.ResponseGpt;
 
@@ -21,8 +22,7 @@ public class GptControllerImp implements GptController  {
     private ServiceGpt serviceGpt;
 
     @PostMapping()
-    public ResponseGpt sendRequest(Request request) throws IOException {
-
+    public ResponseGpt sendRequest(Request request) throws IOException, BadConnectionExeption {
             return serviceGpt.responseGpt(request);
         }
     }

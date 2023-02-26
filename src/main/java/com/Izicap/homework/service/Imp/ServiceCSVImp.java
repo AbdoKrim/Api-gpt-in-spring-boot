@@ -1,27 +1,14 @@
 package com.Izicap.homework.service.Imp;
 
-import com.Izicap.homework.model.ChatMessage;
 import com.Izicap.homework.model.Request;
 import com.Izicap.homework.model.Response;
 import com.Izicap.homework.service.ServiceCSV;
-import com.opencsv.CSVWriter;
-import com.opencsv.bean.StatefulBeanToCsv;
-import com.opencsv.bean.StatefulBeanToCsvBuilder;
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import lombok.extern.slf4j.Slf4j;
-import nonapi.io.github.classgraph.concurrency.SingletonMap;
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
-import org.apache.logging.log4j.message.Message;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-
 import java.io.*;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
