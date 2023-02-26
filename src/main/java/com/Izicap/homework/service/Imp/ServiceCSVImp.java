@@ -51,25 +51,5 @@ public class ServiceCSVImp implements ServiceCSV {
         }
 
 
-
     }
-       /* String result = response.getResponse().replaceAll("[-+.^:,`,\n,`\t,]"," ");
-
-        ChatMessage message = new ChatMessage(request.getMessage(), result);
-        try (Writer writer = new FileWriter("src/main/resources/csv/chat.csv", true)) {
-            StatefulBeanToCsv<ChatMessage> beanToCsv = new StatefulBeanToCsvBuilder<ChatMessage>(writer)
-                    .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
-                    .withQuotechar(CSVWriter.NO_QUOTE_CHARACTER)
-                    .withEscapechar(CSVWriter.DEFAULT_ESCAPE_CHARACTER)
-                    .withLineEnd(CSVWriter.DEFAULT_LINE_END).build();
-
-            beanToCsv.write(message);
-
-        } catch (CsvRequiredFieldEmptyException e) {
-            throw new RuntimeException(e);
-        } catch (CsvDataTypeMismatchException e) {
-            throw new RuntimeException(e);
-        }
-
-
-    }*/}
+ }

@@ -32,32 +32,23 @@ public class ServiceGptImp implements ServiceGpt {
 
 
     private static RestTemplate restTemplate = new RestTemplate();
-    private String CURL = "https://api.openai.com/v1/completions";
-    private String Content_Type="application/json; charset=UTF-8";
-    public String API_KEY ="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";
-    private String Authorization="Bearer " +API_KEY;
-    private String AUTHORIZATION = MyConfig.API_KEY;
-    private String model="text-davinci-003";
-
-    private Double temperature=1.0;
-
 
 
     public ResponseGpt responseGpt(Request request) throws IOException, BadConnectionExeption {
         HttpHeaders headers = new HttpHeaders();
         ResponseGpt responseGpt = new ResponseGpt();
-        headers.add("Content-Type",Content_Type);
-        headers.add("Authorization", AUTHORIZATION);
+        headers.add("Content-Type",MyConfig.Content_Type);
+        headers.add("Authorization", MyConfig.API_KEY);
         RequestToGpt requestToGpt=serviceRequest.requestToRequestToGpt(request);
 
-        try {
+  try {
             String  address = InetAddress.getByName("www.google.com").getHostAddress();
             InetAddress inet = InetAddress.getByName(address);
             log.info("Sending Ping Request to " + address);
-            if(inet.isReachable(50000)){
+            if(inet.isReachable(5000)){
                 HttpEntity httpEntity=new HttpEntity<>(requestToGpt,headers);
                 ResponseEntity<ResponseGpt> responseGptResponseEntity=restTemplate.postForEntity(
-                        CURL,
+                        MyConfig.CURL,
                         httpEntity,
                         ResponseGpt.class
                 );
@@ -79,7 +70,8 @@ public class ServiceGptImp implements ServiceGpt {
             choiceList.add(choice);
             responseGpt.setChoices(choiceList);
             return responseGpt;
-        }
+    }
+
 
     }
 
