@@ -68,5 +68,13 @@ Résulta de Test
 ![image](https://user-images.githubusercontent.com/104686964/221441926-20a4648a-983e-4281-bc26-0d311e716e97.png)
 
   
+Le projet est packagé dans une contunure docker 
+
+![image](https://user-images.githubusercontent.com/104686964/221442924-13ab6e77-2b33-4d2b-a463-797c959df8a5.png)
+
+
+![image](https://user-images.githubusercontent.com/104686964/221442882-2310a080-1139-400e-83b5-7de6b70c9e72.png)
+
+
 
 
