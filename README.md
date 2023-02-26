@@ -1,6 +1,6 @@
 # homework
 
-## Serveur java simple pour s'interfacer avec ChatGPT. 
+## Serveur java simple pour s'interfacer ChatGPT. 
 #### Pourquoi Spring Boot 
 Spring Boot est qu'il permet d'être extraordinairement productif dans la construction de son API : il permet de se concentrer sur la partie métier de son application en laissant de côté toute la complexité de la création d'une API. Spring se basant sur JAVA comme langage de développement, vous êtes toujours libre de réaliser n'importe quel type de développement et n'êtes pas bloqué dans un type de développement spécifique.
   
