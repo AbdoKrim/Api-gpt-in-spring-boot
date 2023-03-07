@@ -1,4 +1,5 @@
-# homework
+# Api-gpt-in-spring-boot
+
 
 ## Serveur java simple pour s'interfacer ChatGPT. 
 #### Pourquoi Spring Boot 
@@ -28,53 +29,6 @@ La réponse reçue du service :
 public static final String API_KEY = "Bearer " + "your key";
 
 
-7.	Test de connexion :
-Le test de connexion à Internet est un processus qui consiste à vérifier si votre appareil est correctement connecté à Internet et s'il est capable d'envoyer et de recevoir des données d'autres appareils et serveurs sur Internet. Le test consiste généralement à envoyer un signal ou une requête de votre appareil à un autre appareil ou serveur sur internet, puis à recevoir une réponse pour confirmer que le signal a été reçu avec succès.
-Dans ce service, s'il y a une mauvaise connexion, voici la réponse :
-![image](https://user-images.githubusercontent.com/104686964/221441890-1aa06091-368f-4306-b428-80a753bc29e9.png)
-
- 
 
 8.       Pour consulter la documentation swagger et tester le service, utilisez le point de terminaison 
 http://localhost:8080/swagger-ui.html
-
-9.          Denpendencies :
-Pour obtenir les dépendances de ce projet, vous pouvez consulter le fichier pom.xml. 
- Les nouvelles dépendances sont :
-
-<dependency>
-   <groupId>org.springdoc</groupId>
-   <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-   <version>2.0.0</version>
-</dependency>
-<dependency>
-   <groupId>com.opencsv</groupId>
-   <artifactId>opencsv</artifactId>
-   <version>5.3</version>
-</dependency>
-<dependency>
-   <groupId>org.apache.commons</groupId>
-   <artifactId>commons-csv</artifactId>
-   <version>1.8</version>
-</dependency>
-
-
-### Partie Testing
-la requêtes HTTP «/api/send >>est testé avec Junit et mockMVC 
-![image](https://user-images.githubusercontent.com/104686964/221441915-0663af18-f2a9-414f-b38f-cd993e1377e9.png)
-
- 
-Résulta de Test 
-![image](https://user-images.githubusercontent.com/104686964/221441926-20a4648a-983e-4281-bc26-0d311e716e97.png)
-
-  
-Le projet est packagé dans une contunure docker 
-
-![image](https://user-images.githubusercontent.com/104686964/221442924-13ab6e77-2b33-4d2b-a463-797c959df8a5.png)
-
-
-![image](https://user-images.githubusercontent.com/104686964/221442882-2310a080-1139-400e-83b5-7de6b70c9e72.png)
-
-
-
-
